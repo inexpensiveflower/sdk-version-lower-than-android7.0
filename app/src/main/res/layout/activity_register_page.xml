@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itshareplus.googlemapdemo.RegisterPage"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="註冊新帳號"
+            android:textColor="#99CCFF"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+
+        <TextView
+            android:id="@+id/textViewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="帳號 Account"
+            android:layout_marginLeft="35dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+
+             />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:text="密碼 Password"
+            android:layout_marginLeft="35dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:text="下一步"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:textColor="#ffffff"
+                android:background="#99CCFF"
+                android:textSize="9pt"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:textAlignment="center"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="#66CCCC"
+                android:text="返回"
+                android:textSize="9pt"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_Name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:text="請輸入您的名字"
+                android:layout_marginLeft="35dp"/>
+
+            <EditText
+                android:id="@+id/saveName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:layout_gravity="center"
+
+              />
+
+        </LinearLayout>
+
+
+
+        <TextView
+                android:id="@+id/textView_Address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="請輸入您的地址"
+                android:visibility="gone"
+                android:layout_marginLeft="35dp"/>
+
+            <EditText
+                android:id="@+id/saveAddress"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:layout_gravity="center"
+              />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveProvider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_gravity="center"
+                    android:text="完成註冊"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:textColor="#ffffff"
+                    android:background="#99CCFF"
+                    android:textSize="9pt"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/back2"
+                android:textAlignment="center"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="#66CCCC"
+                android:text="返回"
+                android:textSize="9pt"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

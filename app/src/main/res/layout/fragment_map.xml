@@ -1,0 +1,56 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itshareplus.googlemapdemo.MapFragment"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="556dp"
+        tools:context="com.example.shiuan.drawerdrawer.MapsActivity"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="14dp"
+        map:layout_constraintRight_toRightOf="@+id/linearLayout"
+        map:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_constraintLeft_creator="1"
+        map:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="-146dp"
+        map:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginRight="14dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/TFaddress"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Bsearch"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Search" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
